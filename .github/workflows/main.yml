@@ -34,7 +34,7 @@ jobs:
         path: build/libs/*.jar
 
   use-artifact:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     needs: build-java
 
     steps:
@@ -42,7 +42,7 @@ jobs:
       uses: actions/download-artifact@v3
       with:
         name: jar-artifact
-        path: artifacts/
+        path: D:/DevOps2024/Sample learning
 
     - name: List downloaded files
-      run: ls -l artifacts/
+      run: dir "D:\DevOps2024\Sample learning"
