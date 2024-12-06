@@ -29,7 +29,7 @@ jobs:
       run: ls -l build/libs/
 
     - name: SonarCloud Scan
-      uses: sonarsource/sonarcloud-github-action@v1.0.0
+      uses: sonarsource/sonarcloud-github-action@v1
       with:
         organization: mohandm07  # Replace with your SonarCloud organization
         token: ${{ secrets.SONAR_TOKEN }}
@@ -53,4 +53,3 @@ jobs:
 
     - name: List downloaded files
       run: dir "D:\DevOps2024\Sample learning"
-
